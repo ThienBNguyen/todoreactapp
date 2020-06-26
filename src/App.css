@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  background: rgb(81, 77, 147);
+  background: linear-gradient(90deg, rgba(81, 77, 147, 1) 0%, rgba(57, 57, 193, 1) 22%, rgba(9, 129, 196, 1) 79%);
+  height: 100vh;
+}
+
+.cockpit h1 {
+  background-color: lightslategray;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: white;
+  margin: 0;
+  padding: 2rem;
+}
+
+.cockpit-form {
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+
+.cockpit-form input,
+
+button {
+  font-size: 1.2rem;
+  padding: 12px;
+  text-transform: capitalize;
+
+}
+
+.cockpit-form button:hover {
+  cursor: pointer;
+}
+
+.cockpit-form input {
+  width: 80%;
+
+}
+
+.cockpit-form button {
+  width: 15%;
+}
+
+.container {
+  width: 40%;
+}
+
+.ul {
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: lightslategray;
+  width: 39%;
+  margin: 1rem auto;
+}
+
+.list h3 {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.list div {
+  align-self: center;
+}
+
+.div span {
+
+  padding: 8px;
+}
+
+.div span:hover {
+  cursor: pointer;
+}

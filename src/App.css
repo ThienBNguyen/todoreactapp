@@ -81,3 +81,10 @@ button {
 .div span:hover {
   cursor: pointer;
 }
+
+.clear-button {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}

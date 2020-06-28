@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class cockpit extends Component {
   render() {
-    const { item, handleChange, handleSubmit } = this.props;
+    const { item, handleChange, handleSubmit, editItem } = this.props;
     return (
       <div className="cockpit">
         <h1>to-do App!</h1>
@@ -12,7 +12,7 @@ export default class cockpit extends Component {
             placeholder="enter task"
             onChange={handleChange}
           ></input>
-          <button type="submit">add</button>
+          <button type="submit">{editItem ? "edit Item" : "add item"}</button>
         </form>
       </div>
     );

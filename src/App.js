@@ -3,6 +3,7 @@ import "./App.css";
 import Cockpit from "./Components/Cockpit/Cockpit";
 import Lists from "./Components/Lists/Lists";
 import uuid from "uuid";
+import ls from "local-storage";
 class App extends React.Component {
   state = {
     items: [],
@@ -10,7 +11,23 @@ class App extends React.Component {
     item: "",
     editItem: false
   };
-
+  componentWillMount() {
+    localStorage.getItem(
+      "items" &&
+        this.setState({
+          items: JSON.parse(localStorage.getItem("items"))
+        })
+    );
+  }
+  componentDidMount() {
+    // if (!localStorage.getItem("items")) {
+    //   this.handleSubmit();
+    // } else {
+    //   console.log("using localstorage!");
+    // }
+    //
+    // this.handleChange();
+  }
   handleChange = e => {
     this.setState({ item: e.target.value });
   };
@@ -29,6 +46,10 @@ class App extends React.Component {
       editItem: false
     });
   };
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem("items", JSON.stringify(nextState.items));
+  }
   clearList = () => {
     this.setState({
       items: []

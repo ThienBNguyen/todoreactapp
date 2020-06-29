@@ -107,6 +107,7 @@ button {
 
   .cockpit-form button {
     width: 40%;
+    margin-top: 1rem;
   }
 
   .list {

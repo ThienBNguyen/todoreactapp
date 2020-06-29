@@ -21,7 +21,6 @@
 }
 
 .cockpit-form input,
-
 button {
   font-size: 1.2rem;
   padding: 12px;
@@ -87,4 +86,30 @@ button {
   color: white;
   border-radius: 5px;
   border: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .cockpit-form input {
+    width: 100%;
+
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .cockpit-form input {
+    width: 100%;
+  }
+
+  .cockpit-form button {
+    width: 40%;
+  }
+
+  .list {
+    width: 100%;
+  }
 }
